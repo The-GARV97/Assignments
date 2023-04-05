@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery-Assignment</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body div {
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #7FFFD5;
+        }
+
+        @media screen and (max-width: 1440px) {
+            body div {
+                height: 900px;
+                background-color: #208B21;
+            }
+
+            body div p::after {
+                content: "Screen size : 1440px";
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            body div {
+                height: 700px;
+                background-color: #B1882F;
+            }
+
+            body div p::after {
+                content: "Screen size : 1024px";
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body div {
+                height: 500px;
+                background-color: #75FBFD;
+            }
+
+            body div p::after {
+                content: "Screen size : 768px";
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            body div {
+                height: 250px;
+                background-color: #CA3142;
+            }
+
+            body div p::after {
+                content: "Screen size : 425px";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is a Media Query demo page.</h1>
+        <p></p>
+    </div>
+</body>
+
+</html>
